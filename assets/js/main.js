@@ -87,3 +87,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+let x = window.innerWidth;
+let y = window.innerHeight;
+console.log(x,y);
