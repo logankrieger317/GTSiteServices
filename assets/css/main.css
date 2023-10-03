@@ -1595,6 +1595,23 @@ input, select, textarea {
 			padding-left: 0.25em;
 		}
 
+.galleryWorkTypes{
+	font-size: large;
+	
+}
+
+#gtLogo{
+	width: 20%;
+	height: 20%;
+	
+	
+}
+
+/* Image Gallery */
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
 /* Box */
 
 	.box.excerpt {
