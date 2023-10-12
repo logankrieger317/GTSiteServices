@@ -1152,7 +1152,7 @@
 				@include vendor('background-image', ('linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35))', 'url("images/bg01.png")'));
 				@include vendor('transform', 'translateX(#{_size(navPanel) * -1})');
 				@include vendor('transition', ('transform #{_duration(navPanel)} ease'));
-				background-color: #303238;
+				background-color: #22ec36;
 				box-shadow: inset -1px 0px 0px 0px rgba(0, 0, 0, 0.5), inset -2px 0px 0px rgba(255, 255, 255, 0.15), inset -2px 0px 10px 0px rgba(0, 0, 0, 0.35);
 				display: block;
 				height: 100%;

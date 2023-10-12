@@ -24,8 +24,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
 body {
 	line-height: 1;
+	
 }
 
 ol, ul {
@@ -1388,7 +1390,7 @@ input, select, textarea {
 			position: absolute;
 			left: 0;
 			top: 0;
-			background: url("images/bg01.png");
+			background: url("images/gtsite.jpg");
 			width: 100%;
 			height: 100%;
 			opacity: 0.75;
@@ -1943,7 +1945,7 @@ input, select, textarea {
 /* Wrappers */
 
 	#header-wrapper {
-		background: url("images/"), url("");
+		background: url("images/gtsite.jpg");
 		background-position: top left, center center;
 		background-size: auto, cover;
 		padding: 3em 0;
@@ -2011,7 +2013,7 @@ input, select, textarea {
 			background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg02.png");
 			position: relative;
 			height: 5.5em;
-			background-color: #3B3E45;
+			background-color: #3b453b;
 			background-color: rgba(59, 62, 69, 0.9);
 			border-radius: 8px;
 			box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.45), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.15);
@@ -2103,7 +2105,8 @@ input, select, textarea {
 		/* Wrappers */
 
 			#header-wrapper {
-				padding: 2em 0;
+				padding: 2em 0;;
+				background-image:url("images/gtsite.jpg") ;
 			}
 
 			body.homepage #header-wrapper {
@@ -2368,6 +2371,9 @@ input, select, textarea {
 			.homepage #header-wrapper {
 				display: block;
 				padding-top: 44px;
+				background-image:url("images/gtsite.jpg") ;
+				}
+	
 			}
 
 			#main-wrapper {
@@ -2483,6 +2489,9 @@ input, select, textarea {
 
 			#header-wrapper {
 				background-position: 35% 50%;
+				
+					background-image:url("images/gtsite.jpg") ;
+	
 			}
 
 			#footer-wrapper {
@@ -2532,12 +2541,14 @@ input, select, textarea {
 	width: 100%; /* Full width */
 	height: 100%; /* Full height */
 	overflow: auto; /* Enable scroll if needed */
+	
 	background-color: rgb(0,0,0); /* Fallback color */
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
   /* Modal Content/Box */
   .modal-content {
+	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -2564,3 +2575,75 @@ input, select, textarea {
 	text-decoration: none;
 	cursor: pointer;
   }
+
+  /* Flip Cards */
+
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	margin: 20px;
+	padding: 20px;
+	margin-left: -10px;
+	/* border: 1px solid #f1f1f1; */
+	border-radius: 5%;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+	background-color: rgba(233, 233, 233, 1);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  /* .flip-card-front {
+	background-color: #bbb;
+	color: black;
+	border-radius: 5%;
+  } */
+  
+  /* Style the back side */
+  .flip-card-back {
+	background-color: rgba(121, 178, 174,0.8);
+	color: white;
+	transform: rotateY(180deg);
+	border-radius: 5%;
+  }
+
+
+/* Spacer Div  */
+
+.spacer {
+	height: 100px;
+	width: 100%;
+}
+
+.header-video-wrapper {
+	border-radius: 0;
+	z-index: -5;
+}
+
+.flip-card1{
+	margin: 100px;
+}
